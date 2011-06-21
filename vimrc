@@ -12,6 +12,9 @@ call pathogen#runtime_append_all_bundles()
 " General
 " ---------------------------------------------------------------------------
 
+" Enable filetype checking and intelligent indenting
+filetype plugin indent on
+
 " Change the mapleader from \ to ,
 let mapleader=","
 
