@@ -120,7 +120,7 @@ set noswapfile
 if &t_Co >= 256 || has("gui_running")
     " Assume a dark background
     set background=dark
-    colorscheme mustang
+    colorscheme ir_black
 endif
 
 if &t_Co > 2 || has("gui_running")
