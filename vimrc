@@ -29,7 +29,6 @@ set backspace=indent,eol,start
 
 " Remember up to 1000 'colon' commmands and search patterns
 set history=1000
-set undolevel=1000
 
 " Enable incremental search
 set incsearch
