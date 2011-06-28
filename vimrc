@@ -203,9 +203,6 @@ if has('autocmd')
     autocmd BufRead,BufNewFile *.rtxt       set ft=html spell
     autocmd BufRead,BufNewFile *.sql        set ft=pgsql
     autocmd BufRead,BufNewFile *.haml       set ft=haml
-    autocmd BufRead,BufNewFile *.md         set ft=mkd tw=80 ts=4 sts=4 sw=4 expandtab
-    autocmd BufRead,BufNewFile *.markdown   set ft=mkd tw=80 ts=4 sts=4 sw=4 expandtab
-    autocmd BufRead,BufNewFile *.mdown      set ft=mkd tw=80 ts=4 sts=4 sw=4 expandtab
     autocmd BufRead,BufNewFile *.ronn       set ft=mkd tw=80 ts=4 sts=4 sw=4 expandtab
     autocmd BufNewFile,BufRead *.rss,*.atom set ft=xml
 
