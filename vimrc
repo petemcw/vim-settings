@@ -219,7 +219,7 @@ if has('autocmd')
     autocmd FileType javascript setlocal ts=4 sts=4 sw=4 expandtab
 
     " Strip trailing white space on specific files
-    autocmd BufWritePre *.php,*.phtml,*.rb,*.htm,*.html,*.css,*.py,*.js :call <SID>StripWhitespace()
+    autocmd BufWritePre *.php,*.phtml,*.rb,*.htm,*.html,*.css,*.py,*.js :%s/\s\+$//ge
     
     " Go back to the position the cursor was on the last time this file was edited
     autocmd BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")|execute("normal `\"")|endif
@@ -263,6 +263,6 @@ command! -nargs=? S call Spaces(<args>)</args>
 
 " Strip off trailing whitespace
 function! StripWhitespace ()
-    exec ':%s/ \+$//gc'
+    exec ':%s/\s\+$//ge'
 endfunction
 map <leader>s :call StripWhitespace ()<CR>
